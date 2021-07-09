@@ -12,7 +12,9 @@ h6,
 p {
   margin: 0;
 }
-
+img {
+  display: block;
+}
 :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
@@ -32,12 +34,14 @@ a {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 .container {
   width: 1200px;
   align-items: center;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .button:hover,
@@ -62,10 +66,18 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  border: none;
+}
+.button-push:hover,
+.button-push:focus {
+  background: #188ce8;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
 }
 .link-webstudio {
   font-weight: 700;
-  font-family: "Raleway", sans-serif;
+
   font-size: 26px;
   line-height: 1.19;
   color: #2196f3;
@@ -116,34 +128,55 @@ ul {
   margin-top: -30px;
 }
 .foto-title-text {
-  flex-basis: calc((100% - 30px) / 3);
-  margin-left: 10px;
-  margin-top: 10px;
-  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
 }
+.contentportfolio-buton-li {
+  margin-right: 8px;
+}
+.work-did {
+  display: block;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+
 .portfolio-buton {
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
-}
-.portfolio-buton {
-  margin-right: 8px;
+  border: none;
+  padding-top: 6px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-left: 20px;
 }
 .contentportfolio-buton {
   display: flex;
-  margin-bottom: 56px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .contentportfolio {
   margin-top: 92px;
 }
+
+.work-did-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-text-color);
+}
+.work-did-title-text {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
 /* PORTFOLIO */
 .main-sectioin {
   background: #2f303a;
-  padding-top: 280px;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 
@@ -157,6 +190,10 @@ ul {
 .link:focus {
   color: #2196f3;
 }
+.link {
+  color: 757575;
+}
+
 .link-navigation {
   font-weight: 500;
   font-size: 14px;
@@ -207,6 +244,7 @@ ul {
 }
 .section-ourcompany {
   margin-top: 94px;
+  margin-bottom: 94px;
 }
 .ourcompany {
   display: flex;
@@ -249,9 +287,6 @@ ul {
 /* FOOTER */
 
 .section-footer {
-  height: 252px;
-  left: 0px;
-  top: 2097px;
   background: #2f303a;
   padding-bottom: 60px;
   padding-top: 60px;
@@ -264,17 +299,6 @@ ul {
 }
 .logo-without-web-footer {
   color: #ffffff;
-}
-.work-did-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  color: var(--title-text-color);
-}
-.work-did-title-text {
-  font-size: 16px;
-  line-height: 1.87;
 }
 .section-footer .link-webstudio {
   margin-bottom: 20px;
