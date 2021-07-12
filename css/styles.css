@@ -76,11 +76,11 @@ ul {
 }
 .link-webstudio {
   font-weight: 700;
-
   font-size: 26px;
   line-height: 1.19;
   color: #2196f3;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 .logo-without-web {
   color: #212121;
@@ -173,6 +173,10 @@ ul {
 }
 
 /* PORTFOLIO */
+.portfolio-buton:focus,
+.portfolio-buton:hover {
+  color: #ffffff;
+}
 .contentportfolio {
   margin-bottom: 94px;
 }
@@ -192,7 +196,10 @@ ul {
 .link:focus {
   color: #2196f3;
 }
-
+.link-navigation-tel-mail:focus,
+.link-navigation-tel-mail:hover {
+  color: #2196f3;
+}
 .link-navigation {
   font-weight: 500;
   font-size: 14px;
@@ -245,8 +252,9 @@ ul {
   margin-left: 30px;
 }
 .section-ourcompany {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-left: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
 }
 .ourcompany {
   display: flex;
@@ -298,6 +306,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   color: var(--occasionally-next-color);
+  margin-top: 20px;
 }
 .logo-without-web-footer {
   color: #ffffff;
