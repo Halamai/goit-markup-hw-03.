@@ -60,12 +60,12 @@ ul {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   border: none;
+  color: #ffffff;
+  background: #2196f3;
 }
 .button-push:hover,
 .button-push:focus {
@@ -158,7 +158,7 @@ ul {
   margin-bottom: 50px;
 }
 .contentportfolio {
-  margin-top: 92px;
+  margin-top: 94px;
 }
 
 .work-did-title {
@@ -173,6 +173,9 @@ ul {
 }
 
 /* PORTFOLIO */
+.contentportfolio {
+  margin-bottom: 94px;
+}
 .main-sectioin {
   background: #2f303a;
   padding-top: 200px;
@@ -309,7 +312,6 @@ ul {
   margin-bottom: 9px;
 }
 .tel-footer {
-  margin-bottom: 60px;
 }
 .footer-tel-mail {
   padding-left: 0;
